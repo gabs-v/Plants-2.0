@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/home.css')}}">
+    <title>plants</title>
+</head> 
+<body> 
+    <div class="container">
+        <div class="nav">
+            <div class="top-nav">
+                <h1><span class="pun">Pot</span> it like its hot</h1>
+                <h3 class="welcome">Welcome <span class="pun"> {{user.first_name}} </span> </h3>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="/home"> What's in season?</a>
+                    </li>
+                    <li>
+                        <a href="/tip/all"> Community Tips </a>
+                    </li>
+                    <li>
+                        <a href="/new/tip"> Share a tip </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around">
+                <a href="/logout">Logout!</a>
+            </div>
+        </div>
+        <div class="plant-section">
+            <div class="middle">
+                <h4>Not sure what to plant right now? <br/>
+                <span>ROMAINE CALM!</span> 
+                Here's some awesome things to plant right now!
+                </h4>
+            </div>
+            
+            <div class="plant">
+                <h3> Carrots </h3>
+                <p>If you live in a cooler climate, carrots are a great veggie to start planting around July! 
+                    A great thing about them is that they can keep in the soil relatively well until you havest them. 
+                    Just be sure to not leave them long enough for the little critters and harsh winters get to them before you can enjoy them!
+                </p>
+                <div class="photo">
+                    <img src="../static/img/david-holifield-y806NLNDVtY-unsplash.jpg">
+                </div>
+            </div>
+
+            <div class="plant">
+                <h3> Tomatillos </h3>
+                <p>
+                    Oh how tomatillos are a personal favorite! These small, green fruit
+                    are most commonly used in Mexican dishes or other hispanic salsas. 
+                    When you start the seeds, keep them inside for about six to eight weeks
+                    before planting it into soil about three feet apart. In about 90 days, get ready to pick
+                    them!
+                </p>
+                <div class="photo">
+                    <img src="../static/img/edward-howell-Of0TWmWlOeE-unsplash.jpg">
+                </div>
+            </div>
+            <div class="plant">
+                <h3> Spinach </h3>
+                <p>
+                    Due to its low maintenance and quick to mature nature, spinach is a great veggie to plant
+                    for both beginners and seasoned gardeners alike! Spinach is one of those awesome veggies that 
+                    has a small window between planting and harvesting time. It's a veggie that you'll most-definitely 
+                    want on your plate this season!
+                </p>
+                <div class="photo">
+                    <img src="../static/img//annie-spratt-lNBLj4fKDFs-unsplash.jpg">
+                </div>
+            </div>
+            <div class="plant">
+                <h3> Green beans </h3>
+                <p>
+                    Suprisingly, green beans have a pretty short growing span. They mature in about 60 days or so. 
+                    This goes without a warning to not let the soil to dry out as the beans start to bloom. 
+                    Either way, it's still such a rewarding harvest when the time comes.
+                </p>
+                <div class="photo">
+                    <img src="../static/img/emma-shappley-lKOyPyPiCbs-unsplash.jpg">
+                </div>
+            </div>
+            <div class="plant">
+                <h3> Sweet Corn </h3>
+                <p>
+                    Sweet corn is a tougher one to grow in the summer compared to others. It just requires more space to grow so about a foot 
+                    or so between should be good enough. Sweet corn also has shorter roots that can't tolerate dry soil. Make sure to not skip watering it!
+                </p>
+                <div class="photo">
+                    <img src="../static/img/lynn-danielson-aEIMhuA-Ij8-unsplash.jpg">
+                </div>
+            </div>
+            <div class="plant">
+                <h3> Cucumbers </h3>
+                <p>
+                    Cucumbers are such a kitchen staple in many households just imagine it staight from your own garden!
+                    These do best when there's lots of sun to soak up and well-draining soil. 
+                    Just wait a good 60-100 days and you'll have some yummy cucumbers to snack on.
+                </p>
+                <div class="photo">
+                    <img src="../static/img/melanie-hauke-GcMtydUJc8k-unsplash.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

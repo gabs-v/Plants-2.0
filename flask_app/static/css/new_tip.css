@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    height: 15%;
+    width: 100%;
+    background-color: rgba(216, 227, 219, 0.758);
+    display: flex;
+    justify-content: space-around;
+}
+top-nav{ 
+    display: flex;
+    text-shadow: 2px 2px 2px rgb(205, 210, 204);
+}
+
+nav-bar{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    color: rgb(220, 239, 220);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 2.5%;
+    color: rgb(192, 229, 196);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+.pun{
+    color: rgb(63, 94, 71);
+    text-shadow: 2px 2px 2px rgb(191, 208, 189);
+}
+
+body{
+    background-image: url('../img/elena-mozhvilo-cw_X61p8TVg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    padding: 2px;
+    height: 50px;
+    color: rgb(220, 239, 220);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+    margin-top: 5%;
+}
+
+.forms{
+    margin-top: 10%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid;
+    background-color: rgba(190, 214, 179, 0.507);
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+textarea{
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: rgba(214, 211, 179, 0.507);
+    border: 2px solid;
+}
+.tip{
+    border: 5px solid rgb(29, 70, 33);
+    padding: 75px;
+    border-radius: 75px;
+    background-color: rgba(75, 93, 69, 0.507);
+    box-shadow: 10px 10px 10px rgb(69, 92, 76);
+    color: rgb(202, 240, 207);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+.puns{
+    color: rgb(117, 186, 133);
+    text-shadow: 2px 2px 2px rgb(30, 33, 30);
+}

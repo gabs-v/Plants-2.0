@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/new_tip.css')}}">
+    <title>plants</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="top-nav">
+                <h1><span class="pun">Pot</span> it like its hot</h1>
+                <h3 class="welcome">Welcome <span class="pun"> {{user.first_name}} </span> </h3>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="/home"> What's in season?</a>
+                    </li>
+                    <li>
+                        <a href="/tip/all"> Community Tips </a>
+                    </li>
+                    <li>
+                        <a href="/new/tip"> Share a tip </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around">
+                <a href="/logout">Logout!</a> 
+            </div>
+        </div>
+        <div class="forms">
+            <form  action="/create/tip" method="post" class="tip"> 
+                
+                <h2> Create a tip or forever hold your <br/>
+                <span class="puns">peas</span>!</h2>
+
+
+                {% with messages = get_flashed_messages(category_filter=['tip']) %} 
+                {% if messages %}
+                <strong> How <span class="puns">Unbeleafable</span>!!!</strong>
+                    {% for message in messages %}
+                        <p>{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                <div class="form-group">
+                    <label for="tip"></label> <br/>
+                    <textarea class="form-control" type="textarea"  name="tip" rows="8" cols="50"> </textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Add Tip!" class="button">
+                    <a href="/tip/all" type="button"> Cancel! </a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/details.css')}}">
+    <title>plants</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="top-nav">
+                <h1><span class="pun">Pot</span> it like its hot</h1>
+                <h3 class="welcome">Welcome <span class="pun"> {{user.first_name}} </span> </h3>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="/home"> What's in season?</a>
+                    </li>
+                    <li>
+                        <a href="/tip/all"> Community Tips </a>
+                    </li>
+                    <li>
+                        <a href="/new/tip"> Share a tip </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around">
+                <a href="/logout">Logout!</a> 
+            </div>
+        </div>
+        <div class="lower-part">
+            <p> {{tip.tip}} </p>
+            <div class="actions">
+                {% if tip.user_id == session.user_id %}
+                    <a href="/edit/tip/{{tip.id}}"  class="action-link">Edit</a>
+                    <a href="/delete/tip/{{tip.id}}" class="action-link">Delete</a>
+                {% endif %}
+                <a href="/tip/all" class="action-link">Go Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

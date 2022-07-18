@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+    <title>plants</title>
+</head>
+<body>
+    <div class="container">
+        <div class='nav'>
+            <h1> <span class="pun">Pot</span> it like it's hot</h1>
+        </div>
+        <div class="forms"> 
+            <form  action="/register" method="post" class="register"> 
+                <h2> Register to get exploring! <br/>
+                I know we're just <span class="pun">mint</span> to be!</h2>
+
+                <div class="error">
+                {% with messages = get_flashed_messages(category_filter=['register']) %} 
+                    {% if messages %}
+                    <strong> How <span class="pun">Unbeleafable</span>!!!</strong>
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                </div>
+
+                <div class="form-group">
+                    <label for="first_name">First Name </label> <br/>
+                    <input class="form-control" id="first_name" type="text" name="first_name"
+                    placeholder="Your First Name" />
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name </label> <br/>
+                    <input class="form-control" id="last_name" type="text"  name="last_name"
+                    placeholder="Your Last Name" />
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email </label> <br/>
+                    <input class="form-control" id="email" type="text"  name="email"
+                    placeholder="Your Email" />
+                </div>
+                <div class="form-group">
+                    <label for="password"> Password </label> <br/>
+                    <input class="form-control" id="password" type="password"  name="password"
+                    placeholder="Your Password" />
+                </div>
+                <div class="form-group">
+                    <label for="confim"> Confirm Password </label> <br/>
+                    <input class="form-control" type="password"  name="confirm"
+                    placeholder="Confirm Your Password" />
+                </div>
+                <button> Register! </button>
+            </form>
+
+            
+            <form class="login" action="/login" method="post"> 
+            
+                <h2> Long <span class="pun">Thyme</span> no see! <br/>
+                Login to start exploring</h2>
+                
+            <div class="error">
+                {% with messages = get_flashed_messages(category_filter=['login']) %} 
+                    {% if messages %}
+                        <h3> How <span class="pun">Unbeleafable</span>!!!</h3>
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+
+                <div class="form-group">
+                    <label for="email"> Email </label> <br/>
+                    <input class="form-control" id="email" type="text" name="email"
+                    placeholder="Your Email" />
+                </div>
+                <div class="form-group">
+                    <label for="password"> Password </label> <br/>
+                    <input class="form-control" id="password" type="password" name="password"
+                    placeholder="Your Password" />
+                </div>
+                <button> Login! </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

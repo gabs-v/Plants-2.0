@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    align-items: center;
+    color: rgb(187, 214, 185);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: rgba(190, 214, 179, 0.507);
+}
+.form-group{
+    margin-top: 5px;
+    color: rgb(43, 61, 47);
+    text-shadow: 2px 2px 2px rgb(188, 210, 187);
+}
+h1{
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5%;
+}
+.error{
+    background-color: rgba(215, 152, 42, 0.577);
+    color: antiquewhite;
+}
+.forms{
+    margin-top: 10%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pun{
+    color: rgb(124, 171, 108);
+    text-shadow: 5px 5px 5px rgb(2, 39, 2);
+}
+
+
+.register{
+    display: block;
+    border: 5px solid rgba(167, 189, 172, 0.988);
+    padding: 3%;
+    padding-bottom: 60px;
+    box-shadow: 10px 10px 10px rgb(36, 95, 63);
+    border-radius: 50px;
+    background-color: rgba(225, 252, 232, 0.512);
+}
+
+
+.login{
+    display: block;
+    border: 5px solid  rgba(167, 189, 172, 0.988);
+    padding: 3%;
+    padding-bottom: 60px;
+    box-shadow: 10px 10px 10px rgb(36, 95, 63);
+    border-radius: 50px;
+    background-color: rgba(225, 252, 232, 0.512);
+}
+body{
+    background-image: url('../img/louis-droege-bsb3QTm3HiE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+button{
+    background-color: rgb(176, 207, 172);
+    padding: 10px;
+    border-color: black;
+    border-radius: 50%;
+}

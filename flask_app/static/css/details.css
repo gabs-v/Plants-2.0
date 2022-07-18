@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    height: 15%;
+    width: 100%;
+    background-color: rgba(216, 227, 219, 0.758);
+    display: flex;
+    justify-content: space-around;
+}
+top-nav{ 
+    display: flex;
+    text-shadow: 2px 2px 2px rgb(205, 210, 204);
+}
+
+nav-bar{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+.action-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    color: rgb(220, 239, 220);
+    text-shadow: 2px 2px 2px rgb(37, 53, 38);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    color: rgb(220, 239, 220);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 2.5%;
+    color: rgb(192, 229, 196);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+.pun{
+    color: rgb(63, 94, 71);
+    text-shadow: 2px 2px 2px rgb(191, 208, 189);
+}
+
+body{
+    background-image: url('../img/pille-r-priske-oEmLiCPK5dI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.puns{
+    color: rgb(117, 186, 133);
+    text-shadow: 2px 2px 2px rgb(30, 33, 30);
+}
+.lower-part{
+    border: 5px solid white;
+    border-radius: 50px;
+    width: 70%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    color: rgb(246, 242, 236);
+    background-color: rgba(65, 110, 110, 0.679);
+
+}
+p{
+    margin: 50px;
+    font-size: xx-large ;
+    color: rgb(192, 229, 196);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+.actions{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}

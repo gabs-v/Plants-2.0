@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    height: 15%;
+    width: 100%;
+    background-color: rgba(216, 227, 219, 0.758);
+    display: flex;
+    justify-content: space-around;
+}
+top-nav{ 
+    display: flex;
+    text-shadow: 2px 2px 2px rgb(205, 210, 204);
+}
+.middle{
+    margin-top: 50px;
+    color: rgb(231, 242, 231);
+    font-size: x-large;
+    text-shadow: 2px 2px 2px rgb(8, 9, 8);
+}
+nav-bar{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(220, 239, 220);
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+    margin-top: 50px;
+}
+.welcome{
+    color: rgb(192, 202, 170);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+
+
+.plant{
+    display: inline-block;
+    border: 5px solid rgba(47, 57, 49, 0.988);
+    padding: 3%;
+    padding-bottom: 60px;
+    box-shadow: 10px 10px 10px rgb(36, 95, 63);
+    border-radius: 50px;
+    background-color: rgb(202, 174, 142);
+    height: 20%;
+    width: 45%;
+    margin: 2%;
+    display: flex;
+}
+
+
+p{
+    display: block;
+    margin: 2% ;
+}
+
+h3{
+    display: block;
+}
+.photo{
+    display: block;
+}
+
+img {
+    border: 1px solid rgba(221, 221, 221, 0.988);
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+h1{
+    font-size: 50px;
+    margin-top: 2.5%;
+    color: rgb(192, 229, 196);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+.pun{
+    color: rgb(63, 94, 71);
+    text-shadow: 2px 2px 2px rgb(191, 208, 189);
+}
+body{
+    background-image: url('../img/nina-luong-dp06f70Eyvc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 2.5%;
+}
+button{
+    background-color: rgb(176, 207, 172);
+    border-color: black;
+    border-radius: 50%;
+}

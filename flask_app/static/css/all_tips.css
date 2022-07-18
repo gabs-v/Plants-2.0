@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    height: 15%;
+    width: 100%;
+    background-color: rgba(216, 227, 219, 0.758);
+    display: flex;
+    justify-content: space-around;
+}
+top-nav{ 
+    display: flex;
+    text-shadow: 2px 2px 2px rgb(205, 210, 204);
+}
+
+nav-bar{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+
+.links{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    width: 150px;
+    color: rgb(202, 238, 202);
+    text-shadow: 2px 2px 2px rgb(17, 26, 16);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 2.5%;
+    color: rgb(192, 229, 196);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+.pun{
+    color: rgb(63, 94, 71);
+    text-shadow: 2px 2px 2px rgb(191, 208, 189);
+}
+
+body{
+    background-image: url('../img/markus-spiske-4PG6wLlVag4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.actions{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+table{
+    border: 15px solid rgb(171, 206, 175);
+    width: 75%;
+    color: whitesmoke;
+    background-color: rgb(76, 95, 76);
+}
+
+th{
+    border: 5px dotted rgb(171, 206, 175);
+    width: 50%;
+    color: rgb(182, 225, 182);
+    text-shadow: 2px 2px 2px rgb(60, 75, 61);
+    padding: 10px;
+    font-size: x-large;
+}
+td{
+    border: 5px dotted rgb(171, 206, 175);
+    width: 50%;
+    color: rgb(220, 239, 220);
+    text-shadow: 2px 2px 2px rgb(37, 53, 38);
+}
+.lower-section{
+    color: rgb(220, 239, 220);
+    text-shadow: 2px 2px 2px rgb(37, 53, 38);
+    margin-top: 5%;
+}
+h4{
+    font-size: xx-large;
+    margin-top: 20px;
+    color: rgb(179, 204, 179);
+    text-shadow: 2px 2px 2px rgb(114, 134, 114);
+    background-color: rgba(8, 17, 11, 0.687);
+    width: 17%;
+    height: 15%;
+    margin-left: 30px;
+    padding: 5px;
+}
+.action-link{
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        color: rgb(220, 239, 220);
+        text-shadow: 2px 2px 2px rgb(37, 53, 38);
+        margin-top: 20px;
+        margin-bottom: 20px;
+}

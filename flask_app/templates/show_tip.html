@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/all_tips.css')}}">
+    <title>plants</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="top-nav">
+                <h1><span class="pun">Pot</span> it like its hot</h1>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a class="links" href="/home"> What's in season?</a>
+                    </li>
+                    <li>
+                        <a class="links" href="/tip/all"> Community Tips </a>
+                    </li>
+                    <li>
+                        <a href="/new/tip"  class="links"> Share a tip </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around">
+                <a href="/logout" class="links">Logout!</a> 
+            </div>
+        </div>
+        <h4>Community Tips</h4>
+        <div class="lower-section">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tips-section">Tips</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tip in tips %}
+                        <tr>
+                            <td>{{tip.tip}}</td>
+
+                            <td class="actions">
+                                <a href="/tip/{{tip.id}}" class="action-link">Show details</a>
+                                {% if tip.user_id == session.user_id %}
+                                <a href="/edit/tip/{{tip.id}}"  class="action-link">Edit</a>
+                                <a href="/delete/tip/{{tip.id}}" class="action-link">Delete</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
